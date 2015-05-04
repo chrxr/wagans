@@ -177,7 +177,7 @@ LOGGING = {
         'file': { 
             'level': 'ERROR', 
             'class': 'logging.FileHandler', 
-            'filename': '/var/log/django/wagans-errors.log', 
+            'filename': '/home/chris/wagans/logs/wagans-errors.log', 
         }, 
     }, 
     'loggers': { 
