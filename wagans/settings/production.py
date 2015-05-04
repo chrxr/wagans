@@ -3,9 +3,28 @@ from .base import *
 
 # Disable debug mode
 
-DEBUG = True
-TEMPLATE_DEBUG = True
+DEBUG = False
+TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = ['skatedev.com', 'www.skatedev.com','178.62.92.190']
+
+LOGGING = { 
+    'version': 1, 
+    'disable_existing_loggers': False, 
+    'handlers': { 
+        'file': { 
+            'level': 'ERROR', 
+            'class': 'logging.FileHandler', 
+            'filename': '/var/log/django/wagan-errors.log', 
+        }, 
+    }, 
+    'loggers': { 
+        'django.request': { 
+            'handlers': ['file'], 
+            'level': 'ERROR', 
+            'propagate': True, 
+        }, 
+    }, 
+} 
 
 # Compress static files offline
 # http://django-compressor.readthedocs.org/en/latest/settings/#django.conf.settings.COMPRESS_OFFLINE
