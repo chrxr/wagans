@@ -42,6 +42,24 @@ ADMINS = (('Chris', 'chrxr@outlook.com'))
 #     }
 # }
 
+LOGGING = { 
+    'version': 1, 
+    'disable_existing_loggers': False, 
+    'handlers': { 
+        'file': { 
+            'level': 'ERROR', 
+            'class': 'logging.FileHandler', 
+            'filename': '/home/chris/wagans/logs/wagans-errors.log', 
+        }, 
+    }, 
+    'loggers': { 
+        'django.request': { 
+            'handlers': ['file'], 
+            'level': 'ERROR', 
+            'propagate': True, 
+        }, 
+    }, 
+} 
 
 try:
     from .local import *
