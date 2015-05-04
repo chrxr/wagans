@@ -4,7 +4,7 @@ from .base import *
 # Disable debug mode
 
 DEBUG = True
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = ['skatedev.com', 'www.skatedev.com','178.62.92.190']
 
 # Compress static files offline
