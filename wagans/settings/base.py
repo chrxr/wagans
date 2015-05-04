@@ -21,7 +21,7 @@ PROJECT_ROOT = dirname(dirname(dirname(abspath(__file__))))
 SECRET_KEY = '@$@^9jiirc5en2h@a@cs*))pojqrg1t+2_c22&6h+al-am366o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
