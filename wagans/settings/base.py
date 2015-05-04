@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 from os.path import abspath, dirname, join
+import logging
+
 
 # Absolute filesystem path to the Django project directory:
 PROJECT_ROOT = dirname(dirname(dirname(abspath(__file__))))
@@ -167,3 +169,22 @@ WAGTAIL_SITE_NAME = "wagans"
 
 # Whether to use face/feature detection to improve image cropping - requires OpenCV
 WAGTAILIMAGES_FEATURE_DETECTION_ENABLED = False
+
+LOGGING = { 
+    'version': 1, 
+    'disable_existing_loggers': False, 
+    'handlers': { 
+        'file': { 
+            'level': 'ERROR', 
+            'class': 'logging.FileHandler', 
+            'filename': '/var/log/django/wagans-errors.log', 
+        }, 
+    }, 
+    'loggers': { 
+        'django.request': { 
+            'handlers': ['file'], 
+            'level': 'ERROR', 
+            'propagate': True, 
+        }, 
+    }, 
+} 
