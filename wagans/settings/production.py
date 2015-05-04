@@ -47,7 +47,7 @@ LOGGING = {
     'disable_existing_loggers': False, 
     'handlers': { 
         'file': { 
-            'level': 'ERROR', 
+            'level': 'DEBUG', 
             'class': 'logging.FileHandler', 
             'filename': '/home/chris/wagans/logs/wagans-errors.log', 
         }, 
@@ -55,7 +55,7 @@ LOGGING = {
     'loggers': { 
         'django.request': { 
             'handlers': ['file'], 
-            'level': 'ERROR', 
+            'level': 'DEBUG', 
             'propagate': True, 
         }, 
     }, 
