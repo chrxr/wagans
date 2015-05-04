@@ -25,7 +25,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['skatedev.com', 'www.skatedev.com','178.62.92.190',]
 
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -

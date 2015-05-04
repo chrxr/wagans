@@ -3,7 +3,7 @@ from .base import *
 
 # Disable debug mode
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False
 ALLOWED_HOSTS = ['skatedev.com', 'www.skatedev.com','178.62.92.190',]
 
