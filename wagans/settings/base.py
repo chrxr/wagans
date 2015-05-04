@@ -23,7 +23,7 @@ SECRET_KEY = '@$@^9jiirc5en2h@a@cs*))pojqrg1t+2_c22&6h+al-am366o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = ['skatedev.com', 'www.skatedev.com','178.62.92.190']
 
