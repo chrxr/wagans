@@ -5,8 +5,7 @@ from .base import *
 
 DEBUG = False
 TEMPLATE_DEBUG = False
-ALLOWED_HOSTS = ['skatedev.com', 'www.skatedev.com','178.62.92.190']
-ADMINS = (('Chris', 'chrxr@outlook.com'))
+
 
 # Compress static files offline
 # http://django-compressor.readthedocs.org/en/latest/settings/#django.conf.settings.COMPRESS_OFFLINE
@@ -42,24 +41,6 @@ ADMINS = (('Chris', 'chrxr@outlook.com'))
 #     }
 # }
 
-LOGGING = { 
-    'version': 1, 
-    'disable_existing_loggers': False, 
-    'handlers': { 
-        'file': { 
-            'level': 'DEBUG', 
-            'class': 'logging.FileHandler', 
-            'filename': '/home/chris/wagans/logs/wagans-errors.log', 
-        }, 
-    }, 
-    'loggers': { 
-        'django.request': { 
-            'handlers': ['file'], 
-            'level': 'DEBUG', 
-            'propagate': True, 
-        }, 
-    }, 
-} 
 
 try:
     from .local import *
